@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <title>个人信息</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: "Microsoft Yahei", sans-serif;
+        }
+        body {
+            max-width: 920px;
+            margin: 30px auto;
+            padding: 0 20px;
+            color: #222;
+            line-height: 1.6;
+        }
+        .header-line {
+            width: 80px;
+            height: 4px;
+            background-color: #348eda;
+            margin-bottom:20px;
+        }
+        h1 {
+            font-size:28px;
+            margin-bottom:20px;
+        }
+        .intro-text {
+            margin-bottom:30px;
+            font-size:16px;
+        }
+        .container {
+            display: grid;
+            grid-template-columns: 220px 1fr;
+            gap:30px;
+        }
+        .sidebar h2{
+            font-size:18px;
+            margin-bottom:12px;
+        }
+        .sidebar p{
+            font-size:14px;
+            margin:4px 0;
+        }
+        .sidebar .item{
+            margin:12px 0;
+            font-size:14px;
+        }
+        .main h2{
+            font-size:20px;
+            margin:24px 0 12px;
+            border-bottom:1px solid #eee;
+            padding-bottom:6px;
+        }
+        .edu-table{
+            width:100%;
+            border-collapse: collapse;
+            margin-bottom:16px;
+        }
+        .edu-table td{
+            padding:8px 4px;
+        }
+        .paper-item{
+            margin:18px 0;
+        }
+        .paper-title{
+            font-weight:bold;
+        }
+        .paper-doi{
+            color:#2067b0;
+        }
+        .paper-abstract{
+            font-size:14px;
+            color:#333;
+            margin-top:6px;
+            text-align:justify;
+        }
+    </style>
+</head>
+<body>
+    <div class="header-line"></div>
+    <h1>个人信息</h1>
+    <p class="intro-text">
+        张雨乐，男，曲阜师范大学在读本科生。研究兴趣主要集中在计算机视觉与Web前端开发领域，特别是智能网页与辅助交互系统的开发与应用。当前的学习工作聚焦于网页静态页面设计，致力于通过HTML与CSS搭建美观的个人主页，增强页面布局排版的美观性与鲁棒性。
+    </p >
+    <div class="container">
+        <div class="sidebar">
+            <h2>张雨乐</h2>
+            <p>本科生，研究方向为计算机视觉、Web前端开发</p >
+            <div class="item">📍 日照,山东,中国</div>
+            <div class="item">🎓 曲阜师范大学</div>
+            <div class="item">🌐 Website</div>
+            <div class="item">📩 Email</div>
+            <div class="item">🆔 ORCID</div>
+            <div class="item">🐙 GitHub</div>
+        </div>
+        <div class="main">
+            <h2>教育经历</h2>
+            <table class="edu-table">
+                <tr>
+                    <td>2022.9 - 至今</td>
+                    <td>曲阜师范大学</td>
+                    <td>计算机科学与技术</td>
+                    <td>本科</td>
+                </tr>
+            </table>
+
+            <h2>学术成果</h2>
+            <div class="paper-item">
+                <p class="paper-title">[1] 论文标题示例</p >
+                <p>作者列表，期刊名称，2025</p >
+                <p class="paper-doi">论文链接；DOI：xxxx</p >
+                <p class="paper-abstract">摘要：这里填写论文摘要文字。</p >
+            </div>
+        </div>
+    </div>
+</body>
+</html>
